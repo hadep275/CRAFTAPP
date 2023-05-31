@@ -1,0 +1,22 @@
+{
+  "name": "craftapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd frontend && npm install && cd .. && cd backend && npm install",
+    "start": "cd backend && npm run start",
+    "build": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadep275/CRAFTAPP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hadep275/CRAFTAPP.git"
+  },
+  "homepage": "https://github.com/hadep275/CRAFTAPP.git#readme"
+}
