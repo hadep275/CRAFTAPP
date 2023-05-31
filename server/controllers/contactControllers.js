@@ -24,5 +24,4 @@ const getEntries = async (req, res) => {
   }
 };
 
-
-export { createEntry, getEntries};
+export { createEntry, getEntries };
