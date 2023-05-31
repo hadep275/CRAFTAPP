@@ -9,18 +9,22 @@ dotenv.config();
 const app = express();
 const port = 6660;
 const __dirname = path.resolve()
-const pathToBuild = path.join(__dirname, '../frontend/build')
+const pathToBuild = path.join(__dirname, '../frontend/dist')
+app.use(express.static(pathToBuild));
 
 app.use(express.json());
 app.use("/api/user", userRouter);
 app.use("/api/inventory", inventoryRouter);
 app.use('/api/contact', contactRouter);
-app.use(express.static(pathToBuild));
 
-app.listen(port, (response, request) => {
+app.listen(port, () => {
   console.log(`To Craft is to life: ${port}`);
 });
 
-
-
+app.get("/", (req, res) => {
+  const name = req.body;
+  if (name) {
+    res.send("Hello World!");
+  }
+});
 

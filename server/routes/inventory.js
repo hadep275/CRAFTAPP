@@ -11,7 +11,7 @@ inventoryRouter.get("/hello", (req, res) => {
 
 inventoryRouter.post("/", (req, res) => {
   const name = req.body.name;
-  console.log(req.body);
+  // console.log(req.body);
   if (name) {
     res.send(`Hello ${name}, how can I help you?`);
   } else {
