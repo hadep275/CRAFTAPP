@@ -7,7 +7,7 @@ import path from 'path'
 
 dotenv.config();
 const app = express();
-const port = 6660;
+const port = process.env.PORT || 6660;
 const __dirname = path.resolve()
 const pathToBuild = path.join(__dirname, '../craft/dist')
 console.log(pathToBuild)
