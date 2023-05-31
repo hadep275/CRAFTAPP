@@ -4,7 +4,7 @@ import Shop from './routes/shop.jsx'
 import ErrorPage from './routes/error-page.jsx';
 import Contact from './routes/contact.jsx';
 import LoginPage from './routes/login.jsx';
-import RegistrationPage from './routes/Register.jsx';
+import RegistrationPage from './routes/register.jsx';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
